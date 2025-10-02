@@ -1,0 +1,20 @@
+[package]
+name = "nodejs-sea-creator"
+version = "1.0.0"
+edition = "2024"
+description = "Simplify the creation of Node.js Single Executable Applications (SEAs)."
+authors = ["Vedant Mohan Goyal"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/vedantmgoyal9/nodejs-sea-creator"
+
+[dependencies]
+apple-codesign = { version = "0.29.0", default-features = false }
+clap = { version = "4.5.48", features = ["derive"] }
+exe = "0.5.6"
+flate2 = "1.1.2"
+goblin = { version = "0.10.1", features = ["mach64"], default-features = false }
+sha2 = "0.10.9"
+serde_json = "1.0.145"
+reqwest = "0.12.23"
+tar = "0.4.44"
