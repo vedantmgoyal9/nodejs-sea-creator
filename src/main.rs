@@ -216,7 +216,7 @@ fn main() {
         std::process::exit(1);
     }
 
-    // when target is not same as host, exit if useCodeCache or useSnapshot is set to true
+    // when target is not same as host AND if useCodeCache or useSnapshot is set to true, exit.
     if target != Target::default()
         // https://nodejs.org/api/single-executable-applications.html#generating-single-executable-preparation-blobs
         // default values for useCodeCache and useSnapshot are false
@@ -228,7 +228,8 @@ fn main() {
             darwin-arm64), `useCodeCache` and `useSnapshot` must be set to false to avoid \
             generating incompatible executables. Since code cache and snapshots can only be loaded \
             on the same platform where they are compiled, the generated executable might crash on \
-            startup when trying to load code cache or snapshots built on a different platform."
+            startup when trying to load code cache or snapshots built on a different platform.\n\n\
+            Visit https://nodejs.org/api/single-executable-applications.html#generating-single-executable-preparation-blobs for more information."
         );
         std::process::exit(1);
     }
