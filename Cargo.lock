@@ -1327,9 +1327,9 @@ dependencies = [
 
 [[package]]
 name = "goblin"
-version = "0.10.4"
+version = "0.10.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4db6758c546e6f81f265638c980e5e84dfbda80cfd8e89e02f83454c8e8124bd"
+checksum = "17582616a7718cca54cec18e534a76c7c4aec11a8b9a85695712f262fd15a4c8"
 dependencies = [
  "log",
  "plain",
@@ -1984,7 +1984,7 @@ dependencies = [
  "clap",
  "exe",
  "flate2",
- "goblin 0.10.4",
+ "goblin 0.10.7",
  "reqwest 0.13.2",
  "serde_json",
  "sha2 0.11.0",
